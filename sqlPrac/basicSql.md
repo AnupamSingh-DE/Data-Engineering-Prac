@@ -28,3 +28,5 @@ CREATE TABLE employees(
     dept VARCHAR(30) NOT NULL
 )
 
+
+### Task 2
