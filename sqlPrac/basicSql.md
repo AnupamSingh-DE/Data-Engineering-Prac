@@ -29,4 +29,22 @@ CREATE TABLE employees(
 )
 
 
-### Task 2
+### Task 2 Display the data, Update the data, delete data
+
+    SELECT emp_id , name 
+    FROM employees 
+    WHERE emp_id = ID;
+
+    SELECT * FROM employees 
+    WHERE emp_id = ID;
+
+    SELECT * FROM employees 
+    WHERE dept = 'GIVEN_DEPT';
+
+    UPDATE employees 
+    SET dept = 'NEW_DEPT'
+    WHERE emp_id = ID;
+
+    DELETE 
+    FROM employees
+    WHERE emp_id = ID;
