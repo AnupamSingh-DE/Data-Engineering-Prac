@@ -48,3 +48,6 @@ CREATE TABLE employees(
     DELETE 
     FROM employees
     WHERE emp_id = ID;
+
+
+    
