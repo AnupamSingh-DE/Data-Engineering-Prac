@@ -49,5 +49,15 @@ CREATE TABLE employees(
     FROM employees
     WHERE emp_id = ID;
 
+ ### Task 3 use string function  
+
+    SELECT CONCAT_WS(':',emp_id, fname, desig, dept ) FROM employees;
+
+    SELECT CONCAT_WS(':',emp_id, CONCAT_WS(fname, ' ' , lname), desig, dept) FROM employees;
+
+    SELECT CONCAT_WS(':',emp_id, fname, UPPER(desig), dept) FROM employees;
+
+    SELECT CONCAT_WS(LEFT(dept, 1), emp_id,' ' , fname) FROM employees;
+
 
     
