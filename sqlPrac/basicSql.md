@@ -57,7 +57,31 @@ CREATE TABLE employees(
 
     SELECT CONCAT_WS(':',emp_id, fname, UPPER(desig), dept) FROM employees;
 
-    SELECT CONCAT_WS(LEFT(dept, 1), emp_id,' ' , fname) FROM employees;
+    SELECT CONCAT_WS(LEFT(dept, 1), emp_id,' ' , fname) FROM employees
 
+### Task 4 
+1. Find different type of departments in database?
+    
+    select distinct dept From employees
+
+2. Display record with High-low salary
+
+    SELECT * FROM employees 
+    ORDER BY salary DESC
+
+3. How to see only top 3 records from table?
+
+    SELECT * FROM employees 
+    ORDER BY salary DESC
+    LIMIT 3
+
+4. Show records where first name start with letter 'A'
+
+    SELECT * FROM emplyees 
+    WHERE fname ilike '%A'
+
+5. Show records where length on lname is 4 character?
+
+    
 
     
